@@ -2,6 +2,7 @@ package com.example.firstform;
 
 import android.os.Bundle;
 import android.provider.ContactsContract;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 
@@ -32,5 +33,8 @@ public class MainActivity extends AppCompatActivity {
         EditText phone=findViewById(R.id.phone);
         RadioGroup gender=findViewById(R.id.gender);
         EditText password=findViewById(R.id.pwd);
+
+        Button button=findViewById(R.id.button);
+
     }
 }
