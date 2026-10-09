@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">FirstForm</string>
+    <string name="reg_form">Registration form</string>
+    <string name="username">Username</string>
+    <string name="fullname">Full name</string>
+    <string name="country">Country</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone number</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="pwd">Password</string>
+    <string name="terms">Agree with terms and conditions</string>
+    <string name="create_acc">Create Account</string>
 </resources>

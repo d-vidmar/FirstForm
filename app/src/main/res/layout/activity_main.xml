@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="409dp"
         android:layout_height="729dp"
         tools:layout_editor_absoluteX="1dp"
@@ -25,7 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
-                android:text="Registration Form"
+                android:text="@string/reg_form"
                 android:textAlignment="center"
                 android:textSize="28sp"
                 android:textStyle="bold" />
@@ -36,7 +37,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:ems="10"
-                android:hint="Username"
+                android:hint="@string/username"
                 android:inputType="text"
                 android:textSize="25sp" />
 
@@ -46,7 +47,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:ems="10"
-                android:hint="Full name"
+                android:hint="@string/fullname"
                 android:inputType="text"
                 android:textSize="25sp" />
 
@@ -56,7 +57,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:ems="10"
-                android:hint="Country"
+                android:hint="@string/country"
                 android:inputType="text"
                 android:textSize="25sp" />
 
@@ -66,7 +67,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:ems="10"
-                android:hint="Email"
+                android:hint="@string/email"
                 android:inputType="textEmailAddress"
                 android:textSize="25sp" />
 
@@ -76,7 +77,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:ems="10"
-                android:hint="Phone number"
+                android:hint="@string/phone"
                 android:inputType="phone"
                 android:textSize="25sp" />
 
@@ -91,7 +92,7 @@
                     android:id="@+id/textView2"
                     android:layout_width="127dp"
                     android:layout_height="wrap_content"
-                    android:text="Gender"
+                    android:text="@string/gender"
                     android:textAlignment="center"
                     android:textSize="25sp" />
 
@@ -99,14 +100,14 @@
                     android:id="@+id/radioButton2"
                     android:layout_width="106dp"
                     android:layout_height="wrap_content"
-                    android:text="Male"
+                    android:text="@string/male"
                     android:textSize="20sp" />
 
                 <RadioButton
                     android:id="@+id/radioButton"
                     android:layout_width="130dp"
                     android:layout_height="wrap_content"
-                    android:text="Female"
+                    android:text="@string/female"
                     android:textSize="20sp" />
 
             </RadioGroup>
@@ -117,25 +118,30 @@
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:ems="10"
-                android:hint="Password"
+                android:hint="@string/pwd"
                 android:inputType="textPassword"
                 android:textSize="25sp" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/termsAndConditions"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
-                android:text="Agree with Terms and Conditions" />
-
-            <Button
-                android:id="@+id/button"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:text="Create account"
-                android:textAlignment="center" />
+                android:text="@string/terms" />
 
         </LinearLayout>
     </ScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="200dp"
+        android:text="@string/create_acc"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toStartOf="@+id/scrollView2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/scrollView2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
